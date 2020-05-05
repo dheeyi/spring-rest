@@ -48,7 +48,7 @@ public class UserControllerRest {
         }
     }
 
-    @PutMapping("/materias/{idmat}")
+    @PutMapping("/persons/{idPer}")
     public ResponseEntity<PersonaModel> updateMaterias(@PathVariable("idPer") Integer idPer, @RequestBody PersonaModel pModel) {
         try {
             PersonaModel pUpdate = personaService.update(pModel, idPer);
